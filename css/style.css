@@ -1,0 +1,368 @@
+/****** General ***********/
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --main-color: #0065fc;
+  --main-bg-color: #f2f2f2;
+  --filter-bg-color: #deebff;
+}
+html {
+  scroll-behavior: smooth;
+}
+.fa-solid {
+  color: var(--main-color);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 22px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+  object-fit: cover;
+}
+
+.card-title {
+  margin: 0;
+}
+
+.euro {
+  font-weight: 700;
+}
+
+.neutralStar {
+  color: var(--main-bg-color);
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
+/*********************************************** header **********************************************/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header img {
+  height: 30px;
+  padding: 30px 0 30px 0;
+}
+.header nav ul {
+  display: flex;
+}
+.header nav ul li a {
+  padding: 0 5rem;
+}
+
+.header nav ul li a {
+  color: rgb(0, 0, 0);
+  padding: 20px 50px;
+  display: block;
+  border: 3px solid transparent;
+  text-decoration: none;
+  float: right;
+}
+
+.header nav ul li a:hover {
+  color: var(--main-color);
+  border-top: 3px solid var(--main-color);
+  transition-duration: 0.8s;
+}
+
+/********************************************** Titre de recherche***************************************************/
+
+.title h1 {
+  margin: 0;
+  margin-top: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.title p {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+/************************************************** barre de recherche ***************************************************/
+.input-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.input-wrapper input {
+  height: 3.2rem;
+  width: 12rem;
+}
+
+.icon-localisation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: var(--main-bg-color);
+  height: 3.32rem;
+  width: 3rem;
+  border-radius: 20px 0 0 20px;
+}
+.icon-localisation i {
+  color: black;
+}
+
+.input-search {
+  padding: 0 2rem;
+  border: var(--main-bg-color) solid 1px;
+  font-size: 1.2rem;
+}
+::placeholder {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.button-search {
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 0 15px 15px 0;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1.01rem;
+  border: var(--main-bg-color) solid 1px;
+}
+
+.icon-button {
+  display: none;
+}
+/******************************************* filter *************************************************/
+.filter {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+.filter h2 {
+  margin-right: 1.5rem;
+}
+
+.filter ul li {
+  border: var(--main-bg-color) solid 2.5px;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  display: inline-flex;
+  margin: 0 1.2rem 0 0;
+}
+.filter ul li a {
+  margin-left: 0.1rem;
+  font-weight: 700;
+}
+.filter ul li:hover {
+  background-color: var(--filter-bg-color);
+  transition-duration: 0.4s;
+}
+
+.filter ul li i {
+  margin-right: 1rem;
+  color: var(--main-color);
+  font-size: 25px;
+}
+/* information */
+
+.information {
+  margin: 2rem 0;
+}
+.information i {
+  border: #d9d9d9 solid 1px;
+  padding: 0.7rem;
+  border-radius: 100%;
+  width: 17px;
+  text-align: center;
+  color: #0065fc;
+}
+.information p {
+  padding-left: 0.7rem;
+  display: inline;
+}
+/****** Hebergements And Populaires ***********/
+.hebergements-and-populaires {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.hebergements-and-populaires section {
+  background-color: var(--main-bg-color);
+  border-radius: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/******************************* Hebergements ***********************************/
+.hebergements {
+  width: 65%;
+}
+
+.img-card {
+  height: 7rem;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+.card2 {
+  display: inline-block;
+  width: 30%;
+  margin-bottom: 1rem;
+  margin-right: 0.895rem;
+}
+.hebergements-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.described {
+  margin: 0.2rem 0.56rem;
+  gap: 0.2rem;
+}
+.card-rating {
+  font-size: 1.2rem;
+}
+.show-more {
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+/***********************************Populaires***********************************/
+.populaires {
+  width: 32%;
+}
+
+.populaires-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.populaires-cards .card {
+  display: flex;
+  margin-top: 33px;
+}
+
+.populaires-cards img {
+  width: 33%;
+  height: 136px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+  width: 67%;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.populaires-cards .card-title {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle {
+  margin: 0;
+  padding: 0;
+}
+.card-subtitle {
+  padding: 0;
+  margin: 0;
+}
+.populaires-cards .card-rating {
+  margin-bottom: 5px;
+}
+.card-txt {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+/*****************************Activités*******************************/
+.marseille-activity {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.img-zone {
+  border-radius: 20px;
+  box-shadow: 0 0 20px #0000002e;
+  width: 24%;
+  height: 28rem;
+  margin-bottom: 3.5rem;
+  cursor: pointer;
+}
+.img-zone img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  height: 23rem;
+}
+.card-zone {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.card-zone h3 {
+  font-size: 1.1rem;
+}
+
+/**************************pied de page*******************************/
+footer {
+  display: inline;
+}
+.footer-style {
+  display: flex;
+  background-color: var(--main-bg-color);
+  padding-bottom: 2rem;
+}
+
+.footer-column {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 30%;
+  margin-left: 1.8rem;
+}
+
+.footer-column h3 {
+  margin: 0;
+  margin-top: 1.5rem;
+}
+
+.footer-column a:hover {
+  cursor: pointer;
+  color: var(--main-color);
+  transition-duration: 0.2s;
+}
