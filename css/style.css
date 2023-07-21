@@ -18,6 +18,7 @@ html {
 body {
   display: flex;
   justify-content: center;
+  margin: 0;
 }
 
 .main-container {
@@ -77,23 +78,20 @@ a {
 .header nav ul {
   display: flex;
 }
-.header nav ul li a {
-  padding: 0 5rem;
-}
 
 .header nav ul li a {
-  color: rgb(0, 0, 0);
-  padding: 20px 50px;
+  padding: 33px 0px;
+  margin-left: 4rem;
   display: block;
-  border: 3px solid transparent;
   text-decoration: none;
   float: right;
 }
 
-.header nav ul li a:hover {
+.header nav ul li a:hover,
+.active {
   color: var(--main-color);
   border-top: 3px solid var(--main-color);
-  transition-duration: 0.8s;
+  transition-duration: 0.1s;
 }
 
 /********************************************** Titre de recherche***************************************************/
@@ -127,7 +125,7 @@ a {
   background-color: var(--main-bg-color);
   height: 3.32rem;
   width: 3rem;
-  border-radius: 20px 0 0 20px;
+  border-radius: 15px 0 0 15px;
 }
 .icon-localisation i {
   color: black;
@@ -164,18 +162,20 @@ a {
   align-items: center;
 }
 .filter h2 {
-  margin-right: 1.5rem;
+  margin-right: 1rem;
+  font-size: 1.3rem;
 }
 
 .filter ul li {
   border: var(--main-bg-color) solid 2.5px;
-  border-radius: 25px;
-  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  padding: 0.8rem 1.12rem;
   align-items: center;
   display: inline-flex;
-  margin: 0 1.2rem 0 0;
+  margin: 0 1rem 0 0;
 }
 .filter ul li a {
+  font-size: 1.2rem;
   margin-left: 0.1rem;
   font-weight: 700;
 }
@@ -185,10 +185,11 @@ a {
 }
 
 .filter ul li i {
-  margin-right: 1rem;
+  margin-right: 0.8rem;
   color: var(--main-color);
   font-size: 25px;
 }
+
 /* information */
 
 .information {
@@ -196,14 +197,15 @@ a {
 }
 .information i {
   border: #d9d9d9 solid 1px;
-  padding: 0.7rem;
+  padding: 0.4rem;
   border-radius: 100%;
-  width: 17px;
+  width: 13px;
   text-align: center;
   color: #0065fc;
+  font-size: 12px;
 }
 .information p {
-  padding-left: 0.7rem;
+  padding-left: 0.6rem;
   display: inline;
 }
 /****** Hebergements And Populaires ***********/
@@ -233,15 +235,16 @@ a {
   border-radius: 1rem 1rem 0 0;
 }
 .card2 {
-  display: inline-block;
-  width: 30%;
-  margin-bottom: 1rem;
-  margin-right: 0.895rem;
+  display: flex;
+  width: 29.63%;
+  flex-direction: column;
 }
 .hebergements-card {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 33px;
+  gap: 30px;
 }
 
 .described {
@@ -252,7 +255,7 @@ a {
   font-size: 1.2rem;
 }
 .show-more {
-  margin-top: 1.2rem;
+  margin-top: 2.2rem;
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -319,7 +322,7 @@ a {
 .img-zone {
   border-radius: 20px;
   box-shadow: 0 0 20px #0000002e;
-  width: 24%;
+  width: 25%;
   height: 28rem;
   margin-bottom: 3.5rem;
   cursor: pointer;
