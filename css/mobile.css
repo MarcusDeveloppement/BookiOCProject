@@ -1,7 +1,7 @@
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
+/****************************************************************** ALL Device below 1024px ******************************************************/
 @media (max-width: 1024px) {
   .hebergements-and-populaires {
     flex-direction: column;
@@ -34,8 +34,9 @@
     font-size: 15px;
   }
 }
-/* Small devices (phones, less than 768px) */
+/************************************************************* Small devices (phones, less than 768px) ************************************************/
 @media (max-width: 767.98px) {
+  /*************************************************** General ***************************************************/
   body {
     margin: 0;
   }
@@ -53,6 +54,7 @@
   .hebergements-and-populaires section {
     background-color: white;
     border-radius: 0;
+    padding: 15px;
   }
 
   .hebergements-and-populaires .populaires {
@@ -84,7 +86,7 @@
     border-bottom: 3px solid var(--main-color);
     border-top: none;
   }
-  /************************* titre ******************************************/
+  /****************************************************** titre ********************************************/
   .mobile {
     margin-left: 1.1rem;
   }
@@ -96,16 +98,16 @@
   .filter ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.4rem;
+    gap: 10px;
     justify-content: center;
   }
 
   .filter ul li {
-    padding: 0;
     margin: 0;
-    width: 37%;
-    height: 2.5rem;
-    padding-left: 1rem;
+    width: 34%;
+    height: 2.2rem;
+    padding: 0.2rem 0.82rem;
+    margin-bottom: 8px;
   }
   .filter ul li a {
     font-size: 1rem;
@@ -123,7 +125,8 @@
   }
 
   .information i {
-    margin-left: 0.5rem;
+    margin-left: 1rem;
+    width: 20px;
   }
 
   .populaires {
@@ -160,20 +163,7 @@
     font-size: 1rem;
   }
 
-  /* activité */
-  .img-zone {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 80%;
-    height: 13rem;
-  }
-
-  .img-zone img {
-    height: 10rem;
-  }
-
-  /* barre de recherche */
+  /******************************************* barre de recherche *************************************************/
   .search {
     justify-content: center;
   }
@@ -221,7 +211,7 @@
     color: var(--main-bg-color);
   }
 
-  /* Les activités */
+  /************************************************ Les activités ***********************************************/
   .activity {
     display: flex;
     flex-direction: column;
@@ -232,8 +222,26 @@
     flex-direction: column;
     align-items: center;
     padding-top: 1.5rem;
+    gap: 0;
   }
-  /* pied de page */
+
+  .activity h2 {
+    margin-left: 20px;
+  }
+
+  .img-zone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 91%;
+    height: 13rem;
+  }
+
+  .img-zone img {
+    height: 10rem;
+  }
+
+  /**************************************************** pied de page ****************************************************/
   .footer-style {
     display: flex;
     flex-direction: column;
@@ -241,7 +249,7 @@
 
   .footer-column {
     margin-top: 1.6rem;
-    width: 50%;
+    width: 55%;
   }
 }
 /* ultrasmall Device */
@@ -258,7 +266,7 @@
   }
 }
 
-/* ****Tablette**** */
+/* **********************************************************************TABLETTES********************************************************************* */
 @media (min-width: 768px) and (max-width: 1024px) {
   /***************************************************** general  ***********************************************/
   .hebergements-and-populaires section {
@@ -357,8 +365,6 @@
     gap: 22px;
   }
 
-  /* filtre  */
-
   /*************************************************** populaires  ******************************************************/
   .populaires-cards .card {
     margin-top: 1.5rem;
@@ -418,7 +424,7 @@
     margin-top: 1.5rem;
   }
 }
-/* More mediaqueries nesthub */
+/******************************************************** More mediaqueries nesthub **********************************************************/
 @media (min-width: 1025px) and (max-width: 1329px) {
   .card2 {
     width: 28.75%;

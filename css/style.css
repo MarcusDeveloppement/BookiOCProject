@@ -249,7 +249,7 @@ a {
 
 .described {
   margin: 0.2rem 0.56rem;
-  gap: 0.2rem;
+  gap: 0.25rem;
 }
 .card-rating {
   font-size: 1.2rem;
@@ -339,6 +339,9 @@ a {
 }
 .card-zone h3 {
   font-size: 1.1rem;
+}
+.activity h2 {
+  margin-bottom: 2rem;
 }
 
 /**************************pied de page*******************************/
