@@ -38,6 +38,7 @@ body {
   border-radius: 20px;
   padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  cursor: pointer;
 }
 
 .card img {
@@ -72,7 +73,7 @@ a {
   justify-content: space-between;
 }
 .header img {
-  height: 30px;
+  height: 25px;
   padding: 30px 0 30px 0;
 }
 .header nav ul {
@@ -85,6 +86,7 @@ a {
   display: block;
   text-decoration: none;
   float: right;
+  cursor: pointer;
 }
 
 .header nav ul li a:hover,
@@ -150,6 +152,12 @@ a {
   font-size: 1rem;
   padding: 1.01rem;
   border: var(--main-bg-color) solid 1px;
+  cursor: pointer;
+}
+
+.button-search:hover {
+  background-color: var(--filter-bg-color);
+  color: var(--main-color);
 }
 
 .icon-button {
@@ -173,6 +181,7 @@ a {
   align-items: center;
   display: inline-flex;
   margin: 0 1rem 0 0;
+  cursor: pointer;
 }
 .filter ul li a {
   font-size: 1.2rem;
@@ -190,7 +199,7 @@ a {
   font-size: 25px;
 }
 
-/* information */
+/********************************************************** information ********************************************************************/
 
 .information {
   margin: 2rem 0;
@@ -208,7 +217,7 @@ a {
   padding-left: 0.6rem;
   display: inline;
 }
-/****** Hebergements And Populaires ***********/
+/************************************************************* Hebergements And Populaires ***********************************************/
 .hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
@@ -222,7 +231,7 @@ a {
   box-sizing: border-box;
 }
 
-/******************************* Hebergements ***********************************/
+/**************************************************************************** Hebergements ***************************************************/
 .hebergements {
   width: 65%;
 }
@@ -259,7 +268,7 @@ a {
   font-size: 1.2rem;
   font-weight: 700;
 }
-/***********************************Populaires***********************************/
+/******************************************************** Populaires ***************************************************************/
 .populaires {
   width: 32%;
 }
@@ -313,7 +322,7 @@ a {
   padding: 0;
 }
 
-/*****************************Activités*******************************/
+/**************************************************************** Activités *******************************************************/
 .marseille-activity {
   display: flex;
   justify-content: center;
@@ -344,7 +353,7 @@ a {
   margin-bottom: 2rem;
 }
 
-/**************************pied de page*******************************/
+/************************************************************** pied de page ******************************************************************/
 footer {
   display: inline;
 }
